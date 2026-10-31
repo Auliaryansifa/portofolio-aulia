@@ -201,6 +201,11 @@ nav a.on{background:color-mix(in srgb,var(--a1) 12%,transparent);color:var(--a1)
 @media print{body>*:not(#md){display:none!important}#md{position:static;display:block;background:none;padding:0;backdrop-filter:none}.mh,.mf{display:none}.mp{max-height:none;box-shadow:none;width:100%}.mb{overflow:visible;padding:0}.cv{border:0}}
 .thumb img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:top}
 .thumb img.cm{object-position:center 35%}
+.tt-thumb{display:grid;place-items:center;background:radial-gradient(ellipse at 50% 42%,#f6f4ef 0,#e3ebea 62%,#cbd8da 100%)}
+.tt-phone{position:relative;z-index:1;height:92%;aspect-ratio:375/852;padding:3px;border-radius:20px;background:#1e2b33;box-shadow:0 8px 20px rgba(15,27,45,.28);overflow:hidden}
+.tt-phone img{position:relative;inset:auto;display:block;width:100%;height:100%;object-fit:cover;object-position:top;border-radius:16px}
+.tt-phone:before{content:"";position:absolute;z-index:2;top:3px;left:50%;transform:translateX(-50%);width:22px;height:4px;background:#1e2b33;border-radius:0 0 5px 5px}
+.tt-phone:after{content:"";position:absolute;z-index:2;bottom:5px;left:50%;transform:translateX(-50%);width:24px;height:3px;border-radius:999px;background:rgba(255,255,255,.72)}
 .pimg{width:100%;border-radius:12px;display:block;margin-bottom:1rem;cursor:zoom-in;border:1px solid var(--line)}
 .cg{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:.8rem;margin-bottom:.5rem}
 .cg img{width:100%;max-height:400px;object-fit:contain;border-radius:10px;background:#f3f4f6;cursor:zoom-in;border:1px solid var(--line)}
@@ -402,7 +407,7 @@ a,button,.card,.tab{touch-action:manipulation}
   <div class="grid" id="projects">
     <article class="card" data-k="web"><div class="thumb t1"><img data-i="hx" alt="Healthy Expert"></div><div class="b"><span class="kind">Web App</span><h3>Healthy Expert - Hypertension Expert System</h3><p>A web-based expert system for early hypertension screening using a hybrid Forward Chaining and Certainty Factor approach.</p><div class="tags"><span class="tag">Expert System</span><span class="tag">Forward Chaining</span><span class="tag">Certainty Factor</span></div></div></article>
     <article class="card" data-k="web"><div class="thumb t3"><img data-i="pc" alt="Piring Cantik: Bakery Website (Prototype)" style="object-position:top"></div><div class="b"><span class="kind">Web App</span><h3>Piring Cantik: Bakery Website (Prototype)</h3><p>A prototype bakery website featuring a product catalog, search, shopping cart, and user login.</p><div class="tags"><span class="tag">PHP</span><span class="tag">Product Catalog</span><span class="tag">Shopping Cart</span></div></div></article>
-    <article class="card" data-k="web"><div class="thumb t4"><img data-i="tt" alt="Titik Temu Kopi POS login screen"></div><div class="b"><span class="kind">Web App</span><h3>Titik Temu Kopi POS</h3><p>A café operations system for managing orders, menu availability, product stock, and sales reports.</p><div class="tags"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Point of Sale</span></div></div></article>
+    <article class="card" data-k="web"><div class="thumb tt-thumb"><div class="tt-phone"><img data-i="tt" alt="Titik Temu Kopi POS on a phone"></div></div><div class="b"><span class="kind">Web App</span><h3>Titik Temu Kopi POS</h3><p>A café operations system for managing orders, menu availability, product stock, and sales reports.</p><div class="tags"><span class="tag">PHP</span><span class="tag">MySQL</span><span class="tag">Point of Sale</span></div></div></article>
     <article class="card" data-k="mobile"><div class="thumb t5"><img data-i="bp" alt="Mobile Product Catalog App" style="object-position:center 30%"></div><div class="b"><span class="kind">Mobile App</span><h3>Mobile Product Catalog App</h3><p>A mobile product catalog app with product details, ratings, pricing, and a purchase button.</p><div class="tags"><span class="tag">React Native</span><span class="tag">Expo Go</span><span class="tag">Mobile UI</span></div></div></article>
     <article class="card" data-k="design"><div class="thumb t2"><img class="cm" data-i="d1" alt="Digital Collage: Pastel Dreamy"></div><div class="b"><span class="kind">Graphic Design</span><h3>Digital Collage: Pastel Dreamy</h3><p>A dreamy pastel digital collage featuring soft pink and blue tones, glossy 3D typography, and decorative stickers.</p><div class="tags"><span class="tag">Digital Collage</span><span class="tag">Photo Editing</span><span class="tag">Pastel Aesthetic</span></div></div></article>
     <article class="card" data-k="design"><div class="thumb t4"><img class="cm" data-i="d2" alt="Digital Collage: Y2K Pink Scrapbook"></div><div class="b"><span class="kind">Graphic Design</span><h3>Digital Collage: Y2K Pink Scrapbook</h3><p>A Y2K-inspired scrapbook collage featuring neon pink, spiral notebooks, a flip phone, and a retro grain texture.</p><div class="tags"><span class="tag">Digital Collage</span><span class="tag">Y2K Aesthetic</span><span class="tag">Typography</span></div></div></article>
@@ -473,7 +478,7 @@ if(!still){
     co.unobserve(n)})},{threshold:.6});
   document.querySelectorAll('[data-count]').forEach(function(n){co.observe(n)});
 }
-IMG.tt='assets/titik-temu-login.png';
+IMG.tt='assets/titik-temu-mobile.png';
 document.querySelectorAll('img[data-i]').forEach(function(i){i.decoding='async';i.src=IMG[i.dataset.i]});
 var M=document.createElement('div');M.id='md';
 M.innerHTML='<div class="mp"><div class="mh"><b id="mt"></b><button id="mx" aria-label="Close">✕</button></div><div class="mb" id="mbd"></div><div class="mf"><button class="btn sec" id="mc">Close</button><button class="btn prt" id="mp" style="display:none">🖨 Cetak / Simpan PDF</button><a class="btn pri" id="ma" target="_blank" rel="noopener"></a></div></div>';
