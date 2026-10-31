@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="1600" viewBox="0 0 1200 1600">
+  <defs>
+    <linearGradient id="paper" x2="0" y2="1"><stop stop-color="#fff"/><stop offset="1" stop-color="#f9fafb"/></linearGradient>
+    <linearGradient id="ribbon"><stop stop-color="#a80012"/><stop offset=".5" stop-color="#d10b20"/><stop offset="1" stop-color="#a80012"/></linearGradient>
+  </defs>
+  <rect width="1200" height="1600" fill="url(#paper)"/>
+  <path d="M0 100 Q420 330 830 170 T1200 145" fill="none" stroke="#b70016" stroke-width="30"/>
+  <path d="M0 132 Q420 360 830 202 T1200 177" fill="none" stroke="#efefef" stroke-width="12"/>
+  <rect x="120" y="360" width="960" height="3" fill="#e5e7eb"/>
+  <text x="600" y="300" text-anchor="middle" font-family="Arial,sans-serif" font-size="58" fill="#555">HUAWEI ICT ACADEMY</text>
+  <path d="M240 420h720v95H240z" fill="url(#ribbon)"/>
+  <path d="m240 420-90 47 90 48m720-95 90 47-90 48" fill="#97000e"/>
+  <text x="600" y="483" text-anchor="middle" font-family="Arial,sans-serif" font-size="38" fill="white">Certificate of Completion</text>
+  <text x="600" y="590" text-anchor="middle" font-family="Arial,sans-serif" font-size="28" fill="#666">This certificate is presented to</text>
+  <text x="600" y="690" text-anchor="middle" font-family="Arial,sans-serif" font-size="54" fill="#333">Aulia Ryansifa Wardah</text>
+  <path d="M310 725h580" stroke="#ddd" stroke-width="2"/>
+  <text x="600" y="810" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" fill="#555">for completing the course</text>
+  <text x="600" y="910" text-anchor="middle" font-family="Arial,sans-serif" font-size="42" fill="#333">HCIP-Datacom Core Technology V1.0 Course</text>
+  <text x="600" y="1100" text-anchor="middle" font-family="Arial,sans-serif" font-size="27" fill="#555">Issue Date: 2026-07-27</text>
+  <text x="600" y="1190" text-anchor="middle" font-family="Arial,sans-serif" font-size="23" fill="#555">Certificate Code: ICT20260727000033</text>
+  <text x="600" y="1460" text-anchor="middle" font-family="Arial,sans-serif" font-size="19" fill="#777">Course completion certificate · Huawei ICT Academy</text>
+  <rect x="35" y="35" width="1130" height="1530" rx="10" fill="none" stroke="#e5e7eb" stroke-width="3"/>
+</svg>
