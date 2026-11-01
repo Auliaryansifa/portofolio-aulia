@@ -222,6 +222,9 @@ nav a.on{background:color-mix(in srgb,var(--a1) 12%,transparent);color:var(--a1)
 .tl{grid-template-columns:minmax(0,1fr)}.xp,.gwrap{min-width:0}
 .gal{grid-template-columns:repeat(4,minmax(0,1fr))}.gal.g3{grid-template-columns:repeat(3,minmax(0,1fr))}
 @media(max-width:640px){.gal{grid-template-columns:repeat(2,minmax(0,1fr))}.gal.g3{grid-template-columns:repeat(3,minmax(0,1fr))}}
+.training-gallery{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:1rem}
+.training-gallery img{aspect-ratio:16/10;object-position:center}
+@media(max-width:640px){.training-gallery{grid-template-columns:1fr!important}}
 .gal.strip{display:flex}
 .gal.strip img{flex:0 0 auto;width:min(220px,58vw);height:calc(min(220px,58vw)*.75);aspect-ratio:auto}
 .gal.strip.tall img{flex:0 0 auto;width:min(190px,52vw);height:calc(min(190px,52vw)*1.55);object-position:top}
@@ -355,7 +358,7 @@ a,button,.card,.tab{touch-action:manipulation}
       <p>Currently taking part in practical web development training focused on building modern web applications. The program combines front-end development with React and server-side development with Node.js.</p>
       <ul><li>Learning to build interactive interfaces with reusable React components.</li><li>Exploring how Node.js runs JavaScript on the server and supports web application features.</li><li>Strengthening core web development skills, structured problem-solving, and hands-on coding practice.</li></ul>
       <div class="tags"><span class="tag">React</span><span class="tag">Node.js</span><span class="tag">Web Development</span><span class="tag">Practical Training</span></div>
-      <div class="gal g3"><img data-i="mt1" data-z="Web development training session at Mediatama, Padang" data-img="mt1" alt="Web development training session at Mediatama, Padang"><img data-i="mt2" data-z="Mediatama Web development training participants" data-img="mt2" alt="Mediatama Web development training participants"></div>
+      <div class="gal g3 training-gallery"><img data-i="mt1" data-z="Web development training session at Mediatama, Padang" data-img="mt1" alt="Web development training session at Mediatama, Padang"><img data-i="mt2" data-z="Mediatama Web development training participants" data-img="mt2" alt="Mediatama Web development training participants"></div>
     </article>
   </div>
 </div></section>
